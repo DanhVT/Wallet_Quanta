@@ -3,11 +3,13 @@
         <img src="dist/assets/img/logo.png" />
     </div>
     <div class="register-wrapper">
-        <a [routerLink]="[ '/register/passphrase', true]" class="button green">
+        <div class="content">
+            <a [routerLink]="[ '/register/passphrase', true]" class="button green">
             Create New Wallet
         </a>
-        <a routerLink="/register/passphrase" class="button orange">
-            Restore Wallet
-        </a>
+            <a routerLink="/register/passphrase" class="button orange">
+                Restore Wallet
+            </a>
+        </div>
     </div>
 </section>

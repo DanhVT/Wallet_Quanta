@@ -3,7 +3,8 @@ const template: string = require("./passPhrase.component.html");
 declare let $:any
 @Component({
 	selector: 'home',
-	template
+	template,
+	styleUrls: ['./../register.css']
 })
 export class RegisterPassPharseComponent{
 	

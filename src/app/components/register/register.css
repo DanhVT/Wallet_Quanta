@@ -11,13 +11,16 @@
 .register-wrapper {
     width: 100%;
     border: solid 1px rgba(255, 255, 255, 0.12);
-    padding: 40px 20px;
     margin-bottom: 15px;
     cursor: pointer;
     overflow: hidden;
 }
 
-.register-wrapper .button {
+.register-wrapper .content {
+    padding: 40px 20px;
+}
+
+.register-wrapper .content .button {
     display: block;
     font-size: 22px;
     width: 60%;
@@ -27,4 +30,35 @@
 
 .register-wrapper .button:hover {
     color: #fff;
+}
+
+.register-wrapper .header {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 18px 18px;
+    border-bottom: 0px solid #ccc;
+    font-weight: bold;
+    font-size: 22px;
+    color: #fff;
+}
+
+.register-wrapper .warning {
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.4;
+    color: #E67E22;
+    margin-bottom: 20px;
+}
+
+.register-wrapper textarea {
+    width: 100%;
+    padding: 15px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fafafa
+}
+
+.register-wrapper .footer {
+    padding: 5px 15px 25px;
+    clear: both;
 }
