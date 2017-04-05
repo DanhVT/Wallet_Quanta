@@ -1,0 +1,67 @@
+{
+  "name": "wallet-quanta",
+  "version": "0.0.1",
+  "description": "Quanta wallet for custodian, managerCTO, Operator,...",
+  "main": "main.js",
+  "scripts": {
+    "start": "tsc && concurrently \"npm run tsc:w\" \"electron .\"  --enable-logging",
+    "build": "tsc -p src/",
+    "dist": "npm run dist:linux64",
+    "dist:osx": "build --platform darwin",
+    "dist:win32": "build --platform win32 --arch ia32",
+    "dist:win64": "build --platform win32 --arch x64",
+    "dist:linux64": "build --platform linux --arch x64"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanhVT/Wallet_Quanta.git"
+  },
+  "keywords": [
+    "Nodejs",
+    "Angualr2",
+    "Electron"
+  ],
+  "author": "Danh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanhVT/Wallet_Quanta/issues"
+  },
+  "homepage": "https://github.com/DanhVT/Wallet_Quanta#readme",
+  "private": true,
+  "engines": {
+    "node": ">= 4.2.1 <= 6",
+    "npm": ">= 3"
+  },
+  "dependencies": {
+    "@angular/common": "~4.0.0",
+    "@angular/compiler": "~4.0.0",
+    "@angular/core": "~4.0.0",
+    "@angular/forms": "~4.0.0",
+    "@angular/http": "~4.0.0",
+    "@angular/platform-browser": "~4.0.0",
+    "@angular/platform-browser-dynamic": "~4.0.0",
+    "@angular/router": "~4.0.0",
+    "@angular/upgrade": "~2.2.0",
+    "angular-in-memory-web-api": "~0.3.0",
+    "core-js": "^2.4.1",
+    "jquery": "^3.2.1",
+    "reflect-metadata": "0.1.8",
+    "rxjs": "5.0.1",
+    "systemjs": "0.19.40",
+    "zone.js": "^0.8.4"
+  },
+  "devDependencies": {
+    "concurrently": "^3.2.0",
+    "typescript": "~2.1.0",
+    "@types/core-js": "0.9.34",
+    "@types/node": "6.0.45",
+    "tslint": "^3.15.1",
+    "electron": "^1.6.2"
+  },
+  "build": {
+    "app-bundle-id": "quantawallet",
+    "app-category-type": "Unity",
+    "download": "cache",
+    "iconUrl": "https://altaapps.io/img/favicon-01.png"
+  }
+}
